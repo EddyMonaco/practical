@@ -4,8 +4,6 @@ import com.cids.eduardo.model.Product;
 import com.cids.eduardo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,7 +13,6 @@ public class ProductService {
 
     @Autowired
     private ProductRepository productRepository;
-
     public List<Product> listAll(){
         return productRepository.findAll();
     }
@@ -71,6 +68,7 @@ public class ProductService {
     }
 
     public List<Product> listBySupplier(String name){
+
         List<Product> bySupplier = (List<Product>) productRepository.findAll()
                                                                     .stream()
                                                                     .filter(supplier -> supplier.getSupplier().getName().equals(name))
