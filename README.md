@@ -8,10 +8,9 @@ https://drive.google.com/file/d/1EFQ-LsZhwpL-Wu7op_O67Vse1UGflx3p/view?usp=shari
 	• Limites: Nome 120 caracteres, Quantidade 9999  
 	• O Fornecedor pode ser pessoa física ou jurídica
 		○ Atributos: Id, Nome, Endereço, CPF(pessoa física), CPNJ(pessoa jurídica)
-	• O estoque pode ser feito com um map de produtos e um de fornecedores
-
  
 # Opcional:
+
 	• Disponibilizar acesso via Swagger
 	• Usar banco de dados ao invés de map
 	• Disponibilizar o artefato compilado
@@ -20,10 +19,10 @@ https://drive.google.com/file/d/1EFQ-LsZhwpL-Wu7op_O67Vse1UGflx3p/view?usp=shari
 
 # Modelo Estrutural:
 
-Modelo = entidade;
-Serviço = regras de negocio; Ver como usar no spring 
-Controller = endpoint
-Repositorio = conversa com o banco de dados, JPA;
+ - Modelo = entidade;
+ - Serviço = regras de negocio; Ver como usar no spring 
+ - Controller = endpoint
+ - Repositorio = conversa com o banco de dados, JPA;
 
 
 # DADOS PARA TESTE:
